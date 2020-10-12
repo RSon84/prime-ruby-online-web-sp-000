@@ -1,3 +1,7 @@
+require 'benchmark'
+
+puts Benchmark.measure { BigMath.PI(10_000) }
+
 def is_prime(num)
   if num < 2
     return false
