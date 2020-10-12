@@ -1,11 +1,13 @@
-# Add  code here!
-def prime?(n)
-  unless n.is_a? Integer
-  puts "That's not an integer."
-  if n%2 !=0 && n!=2
-    puts "#{n} is prime!"
-  else
-    puts "#{n} is not prime."
+def is_prime?(num)
+  if num < 2
+    return false
   end
-end
+  i = 2
+  while i <= num / 2
+    if num % i == 0
+      return false
+    end
+    i += 1
+  end
+  return true
 end
