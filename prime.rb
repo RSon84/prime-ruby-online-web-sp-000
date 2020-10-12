@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(numbers)
   numbers.each do |number|
-    number.prime?
+  number == number.prime?
   end
 end
